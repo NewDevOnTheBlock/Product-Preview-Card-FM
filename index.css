@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background-color: hsl(30, 38%, 92%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+
+.img-container {
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  width: 50%;
+}
+
+.img-mobile {
+  display: none;
+}
+
+h2 {
+  color: hsl(212, 21%, 14%);
+  font-family: "Fraunces";
+  font-size: 38px;
+  line-height: 34px;
+  padding: 8px 0;
+}
+
+h3 {
+  letter-spacing: 8px;
+  color: hsl(228, 12%, 48%);
+  padding: 0 0 8px 0;
+}
+
+p {
+  color: hsl(228, 12%, 48%);
+  line-height: 20px;
+  padding: 10px 0;
+}
+
+.container {
+  display: flex;
+  width: 60vh;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 12px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  padding: 28px;
+  justify-content: space-between;
+  font-family: "Montserrat";
+}
+
+.price-tag {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.price {
+  color: hsl(158, 36%, 37%);
+}
+
+.old-price {
+  text-decoration: line-through;
+  margin-left: 16px;
+}
+
+.purchase-button {
+  border: none;
+  width: 100%;
+  height: 10%;
+  border-radius: 8px;
+  padding: 8px;
+  background-color: hsl(158, 36%, 37%);
+  color: white;
+}
+
+.icon {
+  width: 14px;
+  margin-right: 10px;
+}
+
+.purchase-button:hover {
+  background-color: hsl(158, 36%, 26%);
+}
+
+@media screen and (max-width: 550px) {
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    margin: 12px;
+    display: flex;
+    flex-direction: column;
+    overflow: none;
+  }
+
+  .img-container {
+    display: none;
+  }
+
+  .img-mobile {
+    display: block;
+    width: 100%;
+    /* border-top-left-radius: 12px;
+    border-top-right-radius: 12px; */
+    border-radius: 12px 12px 0 0;
+  }
+
+}
